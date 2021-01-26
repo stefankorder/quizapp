@@ -28,6 +28,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 3rem;
 }
 
 footer {
@@ -40,13 +41,15 @@ footer {
     border: 1px solid black;
     width: 100%;
     text-align: center;
-    height: 3rem;
+    height: auto;
     background-color: white;
 }
 
 .nav-bar {
-    display: inline-flex;
+    display: flex;
     padding: 0.5rem;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    width: 25%;
+    justify-content: center;
 }
