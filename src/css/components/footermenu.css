@@ -1,0 +1,26 @@
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid var(--primary-strong);
+    width: 100%;
+    text-align: center;
+    height: auto;
+    background-color: var(--primary)
+}
+
+.footer__nav{
+    display: flex;
+    padding: .5rem 2.5rem;
+    border-right: 1px solid var(--primary-strong);
+    width: 25%;
+    justify-content: center;
+}
+
+.footer__nav--outside {
+    border-left: 0;
+    border-right: 1px solid var(--primary);
+}
