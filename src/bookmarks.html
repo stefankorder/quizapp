@@ -11,29 +11,51 @@
 <h1>DEINE FAVORITEN</h1>
 </header>
 <main>
-    <div>
-        <div>
-            <h2>Beispielfrage</h2>
-            <input type="checkbox" name="Bookmark" id="">
+    <div class="bookmark">
+        <div class="bookmark__div1">
+            <h2 class="bookmark_headline">Beispielfrage</h2>
+            <div class="bookmark__bookmark">
+            <input class="bookmark__checkbox" type="checkbox" name="Bookmark" id="bookmark" checked>
+            <label for="bookmark"><i class="fas fa-bookmark"></i></label>
+            </div>
         </div>
-        <p>Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button>Show Answer</button>
-        <div> 
+        <p class="bookmark__text">Wie ist die Beispielfrage der Beispielfragen?</p>
+        <button class="bookmark__button">Show Answer</button>
+        <div class="bookmark__tags"> 
             <p>tag1</p>
             <p>tag2</p>
             <p>tag3</p>
             <p>tag4</p>
         </div>
     </div>
-
-    <div>
-        <div>
-            <h2>Beispielfrage</h2>
-            <input type="checkbox" name="Bookmark" id="">
+    <div class="bookmark">
+        <div class="bookmark__div1">
+            <h2 class="bookmark_headline">Beispielfrage</h2>
+            <div class="bookmark__bookmark">
+            <input class="bookmark__checkbox" type="checkbox" name="Bookmark" id="bookmark" checked>
+            <label for="bookmark"><i class="fas fa-bookmark"></i></label>
+            </div>
         </div>
-        <p>Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button>Show Answer</button>
-        <div> 
+        <p class="bookmark__text">Wie ist die Beispielfrage der Beispielfragen?</p>
+        <button class="bookmark__button">Show Answer</button>
+        <div class="bookmark__tags"> 
+            <p>tag1</p>
+            <p>tag2</p>
+            <p>tag3</p>
+            <p>tag4</p>
+        </div>
+    </div>
+    <div class="bookmark">
+        <div class="bookmark__div1">
+            <h2 class="bookmark_headline">Beispielfrage</h2>
+            <div class="bookmark__bookmark">
+            <input class="bookmark__checkbox" type="checkbox" name="Bookmark" id="bookmark" checked>
+            <label for="bookmark"><i class="fas fa-bookmark"></i></label>
+            </div>
+        </div>
+        <p class="bookmark__text">Wie ist die Beispielfrage der Beispielfragen?</p>
+        <button class="bookmark__button">Show Answer</button>
+        <div class="bookmark__tags"> 
             <p>tag1</p>
             <p>tag2</p>
             <p>tag3</p>
@@ -45,10 +67,10 @@
 
 </main>
 <footer>
-    <a class="footer__nav" href="index.html"><img src="icons/home-solid.svg" alt="Home"></a>
-    <a class="footer__nav" href="bookmarks.html"><img src="icons/bookmark-solid.svg" alt="Bookmarks"></a>
-    <a class="footer__nav" href="create.html"><img src="icons/plus-circle-solid.svg" alt=""></a>
-    <a class="footer__nav footer__nav--outside" href="profile.html"><img src="icons/user-circle-solid.svg" alt=""></a>
+    <a class="footer__nav" href="index.html"><div><i class="fas fa-home"></div></i></a>
+    <a class="footer__nav" href="bookmarks.html"><div><i class="far fa-bookmark"></i></div></a>
+    <a class="footer__nav" href="create.html"><div><i class="fas fa-plus"></i></div></a>
+    <a class="footer__nav" href="profile.html"><div><i class="far fa-user-circle"></i></div></a>
 </footer>
 </body>
 </html>

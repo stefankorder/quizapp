@@ -1,4 +1,5 @@
 @import "./main.css";
 @import "./utilitys.css";
+@import "./all.css";
 
 @import "./components/*.css"

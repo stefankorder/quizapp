@@ -5,22 +5,38 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 3px solid var(--primary-strong);
+    border-top: 0.5px solid rgba(0, 0, 0, 0.5);
     width: 100%;
     text-align: center;
     height: auto;
-    background-color: var(--primary)
 }
 
-.footer__nav{
+.footer__nav {
     display: flex;
-    padding: .5rem 2.5rem;
-    border-right: 1px solid var(--primary-strong);
+    padding: 0 2.5rem;
     width: 25%;
     justify-content: center;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: white;
+    font-size: 6vw;
 }
 
-.footer__nav--outside {
-    border-left: 0;
-    border-right: 1px solid var(--primary);
+.footer__nav:nth-child(1):active {
+    border-top: 3px solid darkslategrey;
+    color: darkslategrey;
+}
+
+.footer__nav:nth-child(2):active {
+    border-top: 3px solid lightgreen;
+    color: lightgreen;
+}
+
+.footer__nav:nth-child(3):active {
+    border-top: 3px solid lightsalmon;
+    color: lightsalmon;
+}
+
+.footer__nav:nth-child(4):active {
+    border-top: 3px solid rgb(247, 247, 108);
+    color: rgb(247, 247, 108);
 }
