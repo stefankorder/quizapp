@@ -27,15 +27,15 @@
     display: none;
 }
 
-.question__bookmark input[type="checkbox"] + label {
+.question__checkbox + label {
     color: grey;
 }
 
-.question__bookmark input[type="checkbox"]:checked + label {
+.question__checkbox:checked + label {
     color: #0080b7;
 }
 
-.question__bookmark input[type="checkbox"]:hover + label {
+.question__checkbox:hover + label {
     color: #0080b7;
 }
 
