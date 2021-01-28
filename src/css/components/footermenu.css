@@ -13,7 +13,6 @@ footer {
 
 .footer__nav {
     display: flex;
-    padding: 0 2.5rem;
     width: 25%;
     justify-content: center;
     color: rgba(0, 0, 0, 0.5);
@@ -21,22 +20,18 @@ footer {
     font-size: 6vw;
 }
 
-.footer__nav:nth-child(1):active {
-    border-top: 3px solid darkslategrey;
-    color: darkslategrey;
+.footer__nav div {
+    width: 50%;
+    border-top: 3px solid transparent;
+    padding: 0 0.5rem;
 }
 
-.footer__nav:nth-child(2):active {
-    border-top: 3px solid lightgreen;
-    color: lightgreen;
+.footer__nav div:active {
+    border-top: 3px solid #0080b7;
+    color: #0080b7;
 }
 
-.footer__nav:nth-child(3):active {
-    border-top: 3px solid lightsalmon;
-    color: lightsalmon;
-}
-
-.footer__nav:nth-child(4):active {
-    border-top: 3px solid rgb(247, 247, 108);
-    color: rgb(247, 247, 108);
+.footer__nav div:hover {
+    border-top: 3px solid #0080b7;
+    color: #0080b7;
 }

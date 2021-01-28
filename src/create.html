@@ -11,10 +11,17 @@
 <h1>NEUE FRAGE</h1>
 </header>
 <main>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <textarea name="" id="" cols="30" rows="2"></textarea>
-        <button type="submit">Create</button>
+    <div class="create">
+        <form class="create__form">
+        <label class="create__text" for="question">Frage:</label>
+        <textarea class="create__textareas" placeholder="Erstelle eine Frage!" name="" id="question" required></textarea>
+        <label class="create__text" for="answer">Antwort:</label>
+        <textarea class="create__textareas" placeholder="Formuliere die passende Antwort!" name="" id="answer" required></textarea>
+        <label class="create__text" for="tags">Tags:</label>
+        <textarea class="create__textareas" placeholder="Stelle Hinweis-Tags zur Verfügung!" name="" id="tags" required></textarea>
+        <button class="create__button" type="submit">Erstellen</button>
+        </form>
+    </div>
 </main>
 <footer>
     <a class="footer__nav" href="index.html"><div><i class="fas fa-home"></div></i></a>
