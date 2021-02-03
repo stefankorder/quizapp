@@ -1,63 +1,24 @@
-const button1 = document.querySelector('#button1')
-const answer1 = document.querySelector('#answer1')
+const buttons = document.querySelectorAll('.question__button')
 
-button1.addEventListener('click',
+buttons.forEach(button =>
+button.addEventListener('click',
     () => {
-        answer1.classList.toggle('hidden')
-})
+        const answer = button.parentNode.querySelector('.question__text');
+        answer.classList.toggle('hidden');
 
-const button2 = document.querySelector('#button2')
-const answer2 = document.querySelector('#answer2')
+        const tag = button.parentNode.querySelector('.right');
+        tag.classList.toggle('tag');
 
-button2.addEventListener('click',
+        button.innerText = answer.classList.contains('hidden')
+        ? 'Show'
+        : 'Hide';
+        button.innerText += ' Answer';
+}))
+
+const bookmarks = document.querySelectorAll('.question__checkbox')
+
+bookmarks.forEach(bookmark =>
+bookmark.addEventListener('click',
     () => {
-        answer2.classList.toggle('hidden')
-})
-
-const button3 = document.querySelector('#button3')
-const answer3 = document.querySelector('#answer3')
-
-button3.addEventListener('click',
-    () => {
-        answer3.classList.toggle('hidden')
-})
-
-const button4 = document.querySelector('#button4')
-const answer4 = document.querySelector('#answer4')
-
-button4.addEventListener('click',
-    () => {
-        answer4.classList.toggle('hidden')
-})
-
-const button5 = document.querySelector('#button5')
-const answer5 = document.querySelector('#answer5')
-
-button5.addEventListener('click',
-    () => {
-        answer5.classList.toggle('hidden')
-})
-
-const button6 = document.querySelector('#button6')
-const answer6 = document.querySelector('#answer6')
-
-button6.addEventListener('click',
-    () => {
-        answer6.classList.toggle('hidden')
-})
-
-const button7 = document.querySelector('#button7')
-const answer7 = document.querySelector('#answer7')
-
-button7.addEventListener('click',
-    () => {
-        answer7.classList.toggle('hidden')
-})
-
-const button8 = document.querySelector('#button8')
-const answer8 = document.querySelector('#answer8')
-
-button8.addEventListener('click',
-    () => {
-        answer8.classList.toggle('hidden')
-})
+        bookmark.classList.toggle('checked');
+}))

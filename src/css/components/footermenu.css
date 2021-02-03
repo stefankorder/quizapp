@@ -1,23 +1,23 @@
 footer {
     position: fixed;
-    left: 0px;
-    bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 0.5px solid rgba(0, 0, 0, 0.5);
     width: 100%;
     text-align: center;
-    height: auto;
+    max-width: 414px;
 }
 
 .footer__nav {
-    display: flex;
-    width: 25%;
+    display: flex;  
     justify-content: center;
     color: rgba(0, 0, 0, 0.5);
     background-color: white;
-    font-size: 6vw;
+    font-size: 1.5rem;
+    width: 25%;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-left: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-right: 0.5px solid rgba(0, 0, 0, 0.5);
 }
 
 .footer__nav div {
@@ -26,7 +26,7 @@ footer {
     padding: 0 0.5rem;
 }
 
-.footer__nav div:active {
+.footer__nav div.active {
     border-top: 3px solid #0080b7;
     color: #0080b7;
 }
@@ -34,4 +34,60 @@ footer {
 .footer__nav div:hover {
     border-top: 3px solid #0080b7;
     color: #0080b7;
+}
+
+@media (max-width:414px) {
+    footer {
+        bottom: 0;
+    }  
+
+    .footer__nav {
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media (min-width:415px) {
+    footer {
+        right: -180px;
+        top: 160px;
+        transform:rotate(90deg);
+    }
+
+    .footer__nav {
+        width: 15%;
+        height: 3rem;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+        border-top: 0.5px solid rgba(0, 0, 0, 0.5);
+        border-left: none;
+        border-right: none;
+    }
+
+    .footer__nav:nth-child(1) {
+        border-left: 0.5px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .footer__nav:nth-child(4) {
+        border-right: 0.5px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .footer__nav div {
+        transform: rotate(270deg);
+        width: 3rem;
+        border-top: none;
+        border-left: 3px solid transparent;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .footer__nav div.active {
+        border-left: 3px solid #0080b7;
+        border-top: none;
+        color: #0080b7;
+    }
+    
+    .footer__nav div:hover {
+        border-left: 3px solid #0080b7;
+        border-top: none;
+        color: #0080b7;
+    }
 }

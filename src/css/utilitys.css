@@ -10,6 +10,6 @@
     opacity: 0;
 }
 
-p {
-    transition: opacity 2s ease-in;
+.tag {
+    scale: 1.5;
 }

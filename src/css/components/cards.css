@@ -7,7 +7,14 @@
     border-left: 3px solid #0080b7;
     background-color: rgba(0, 0, 0, 0.125);
     width: 100%;
+    max-width: 414px;
    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+@media (min-width: 415px) {
+    .question {
+        margin-right: 4rem;
+    }
 }
 
 .question__div1 {
@@ -23,25 +30,21 @@
     display: inline;  
 }
 
-.question__checkbox {
-    display: none;
-}
-
-.question__checkbox + label {
+.question__checkbox{
     color: grey;
 }
 
-.question__checkbox:checked + label {
+.question__checkbox.checked {
     color: #0080b7;
 }
 
-.question__checkbox:hover + label {
+.question__checkbox:hover {
     color: #0080b7;
 }
 
 .question__bookmark {
     position: relative;
-    left: 6vw;
+    left: 3rem;
     bottom: 2rem;
     font-size: 2.25rem;
 }
@@ -50,6 +53,7 @@
     margin: 1rem;
     text-align: justify;
     font-size: 0.8rem;
+    transition: opacity 1s ease-in;
 }
 
 .question__button {
@@ -66,5 +70,5 @@
 }
 
 .question__tags p {
-    display: inline;
+    display: inline-block;
 }

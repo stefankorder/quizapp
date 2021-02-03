@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUIZ-APP</title>
+    <title>QUIZ-APP - BOOKMARKS</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/js.js" defer></script>
 </head>
@@ -14,14 +14,13 @@
 <main>
     <div class="question">
         <div class="question__div1">
-            <h2 class="question_headline">Beispielfrage</h2>
+            <h2 class="question_headline">Wie ist die Antwort?</h2>
             <div class="question__bookmark">
-            <input class="question__checkbox" type="checkbox" name="Bookmark" id="1" checked>
-            <label for="1"><i class="fas fa-bookmark"></i></label>
+            <div class="question__checkbox" for="1"><i class="fas fa-bookmark"></i></div>
             </div>
         </div>
-        <p class="question__text">Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button class="question__button">Show Answer</button>
+        <p id="answer1" class="question__text hidden">Dies ist die Antwort!</p>
+        <button id="button1" class="question__button">Show Answer</button>
         <div class="question__tags"> 
             <p class="m05">tag1</p>
             <p class="m05">tag2</p>
@@ -31,14 +30,13 @@
     </div>
     <div class="question">
         <div class="question__div1">
-            <h2 class="question_headline">Beispielfrage</h2>
+            <h2 class="question_headline">Wie ist die Antwort?</h2>
             <div class="question__bookmark">
-            <input class="question__checkbox" type="checkbox" name="Bookmark" id="2" checked>
-            <label for="2"><i class="fas fa-bookmark"></i></label>
+            <div class="question__checkbox" for="1"><i class="fas fa-bookmark"></i></div>
             </div>
         </div>
-        <p class="question__text">Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button class="question__button">Show Answer</button>
+        <p id="answer1" class="question__text hidden">Dies ist die Antwort!</p>
+        <button id="button1" class="question__button">Show Answer</button>
         <div class="question__tags"> 
             <p class="m05">tag1</p>
             <p class="m05">tag2</p>
@@ -48,14 +46,13 @@
     </div>
     <div class="question">
         <div class="question__div1">
-            <h2 class="question_headline">Beispielfrage</h2>
+            <h2 class="question_headline">Wie ist die Antwort?</h2>
             <div class="question__bookmark">
-            <input class="question__checkbox" type="checkbox" name="Bookmark" id="3" checked>
-            <label for="3"><i class="fas fa-bookmark"></i></label>
+            <div class="question__checkbox" for="1"><i class="fas fa-bookmark"></i></div>
             </div>
         </div>
-        <p class="question__text">Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button class="question__button">Show Answer</button>
+        <p id="answer1" class="question__text hidden">Dies ist die Antwort!</p>
+        <button id="button1" class="question__button">Show Answer</button>
         <div class="question__tags"> 
             <p class="m05">tag1</p>
             <p class="m05">tag2</p>
@@ -69,7 +66,7 @@
 </main>
 <footer>
     <a class="footer__nav" href="index.html"><div><i class="fas fa-home"></div></i></a>
-    <a class="footer__nav" href="bookmarks.html"><div><i class="far fa-bookmark"></i></div></a>
+    <a class="footer__nav" href="bookmarks.html"><div class="active"><i class="far fa-bookmark"></i></div></a>
     <a class="footer__nav" href="create.html"><div><i class="fas fa-plus"></i></div></a>
     <a class="footer__nav" href="profile.html"><div><i class="far fa-user-circle"></i></div></a>
 </footer>
