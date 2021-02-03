@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIZ-APP</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/js.js" defer></script>
 </head>
 <body>
 <header>
@@ -13,14 +14,14 @@
 <main>
     <div class="question">
         <div class="question__div1">
-            <h2 class="question_headline">Beispielfrage</h2>
+            <h2 class="question_headline">Wie ist die Antwort?</h2>
             <div class="question__bookmark">
             <input class="question__checkbox" type="checkbox" name="Bookmark" id="1">
             <label for="1"><i class="fas fa-bookmark"></i></label>
             </div>
         </div>
-        <p class="question__text">Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button class="question__button">Show Answer</button>
+        <p id="answer1" class="question__text hidden">Dies ist die Antwort!</p>
+        <button id="button1" class="question__button">Show Answer</button>
         <div class="question__tags"> 
             <p class="m05">tag1</p>
             <p class="m05">tag2</p>
@@ -30,14 +31,14 @@
     </div>
     <div class="question">
         <div class="question__div1">
-            <h2 class="question_headline">Beispielfrage</h2>
+            <h2 class="question_headline">Wie ist die Antwort?</h2>
             <div class="question__bookmark">
-            <input class="question__checkbox" type="checkbox" name="Bookmark" id="2">
-            <label for="2"><i class="fas fa-bookmark"></i></label>
+            <input class="question__checkbox" type="checkbox" name="Bookmark" id="1">
+            <label for="1"><i class="fas fa-bookmark"></i></label>
             </div>
         </div>
-        <p class="question__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam maxime soluta, nam, atque dolorem ipsum dignissimos facere dolorum corporis officiis eum! Quod ducimus molestias reiciendis? Non molestiae excepturi itaque obcaecati.</p>
-        <button class="question__button">Show Answer</button>
+        <p id="answer2" class="question__text hidden">Dies ist die Antwort!</p>
+        <button id="button2" class="question__button">Show Answer</button>
         <div class="question__tags"> 
             <p class="m05">tag1</p>
             <p class="m05">tag2</p>
@@ -47,14 +48,14 @@
     </div>
     <div class="question">
         <div class="question__div1">
-            <h2 class="question_headline">Beispielfrage</h2>
+            <h2 class="question_headline">Wie ist die Antwort?</h2>
             <div class="question__bookmark">
-            <input class="question__checkbox" type="checkbox" name="Bookmark" id="3">
-            <label for="3"><i class="fas fa-bookmark"></i></label>
+            <input class="question__checkbox" type="checkbox" name="Bookmark" id="1">
+            <label for="1"><i class="fas fa-bookmark"></i></label>
             </div>
         </div>
-        <p class="question__text">Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button class="question__button">Show Answer</button>
+        <p id="answer3" class="question__text hidden">Dies ist die Antwort!</p>
+        <button id="button3" class="question__button">Show Answer</button>
         <div class="question__tags"> 
             <p class="m05">tag1</p>
             <p class="m05">tag2</p>
@@ -64,14 +65,14 @@
     </div>
     <div class="question">
         <div class="question__div1">
-            <h2 class="question_headline">Beispielfrage</h2>
+            <h2 class="question_headline">Wie ist die Antwort?</h2>
             <div class="question__bookmark">
-            <input class="question__checkbox" type="checkbox" name="Bookmark" id="4">
-            <label for="4"><i class="fas fa-bookmark"></i></label>
+            <input class="question__checkbox" type="checkbox" name="Bookmark" id="1">
+            <label for="1"><i class="fas fa-bookmark"></i></label>
             </div>
         </div>
-        <p class="question__text">Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button class="question__button">Show Answer</button>
+        <p id="answer4" class="question__text hidden">Dies ist die Antwort!</p>
+        <button id="button4" class="question__button">Show Answer</button>
         <div class="question__tags"> 
             <p class="m05">tag1</p>
             <p class="m05">tag2</p>
@@ -81,14 +82,14 @@
     </div>
     <div class="question">
         <div class="question__div1">
-            <h2 class="question_headline">Beispielfrage</h2>
+            <h2 class="question_headline">Wie ist die Antwort?</h2>
             <div class="question__bookmark">
-            <input class="question__checkbox" type="checkbox" name="Bookmark" id="5">
-            <label for="5"><i class="fas fa-bookmark"></i></label>
+            <input class="question__checkbox" type="checkbox" name="Bookmark" id="1">
+            <label for="1"><i class="fas fa-bookmark"></i></label>
             </div>
         </div>
-        <p class="question__text">Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button class="question__button">Show Answer</button>
+        <p id="answer5" class="question__text hidden">Dies ist die Antwort!</p>
+        <button id="button5" class="question__button">Show Answer</button>
         <div class="question__tags"> 
             <p class="m05">tag1</p>
             <p class="m05">tag2</p>
@@ -98,14 +99,14 @@
     </div>
     <div class="question">
         <div class="question__div1">
-            <h2 class="question_headline">Beispielfrage</h2>
+            <h2 class="question_headline">Wie ist die Antwort?</h2>
             <div class="question__bookmark">
-            <input class="question__checkbox" type="checkbox" name="Bookmark" id="6">
-            <label for="6"><i class="fas fa-bookmark"></i></label>
+            <input class="question__checkbox" type="checkbox" name="Bookmark" id="1">
+            <label for="1"><i class="fas fa-bookmark"></i></label>
             </div>
         </div>
-        <p class="question__text">Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button class="question__button">Show Answer</button>
+        <p id="answer6" class="question__text hidden">Dies ist die Antwort!</p>
+        <button id="button6" class="question__button">Show Answer</button>
         <div class="question__tags"> 
             <p class="m05">tag1</p>
             <p class="m05">tag2</p>
@@ -115,14 +116,14 @@
     </div>
     <div class="question">
         <div class="question__div1">
-            <h2 class="question_headline">Beispielfrage</h2>
+            <h2 class="question_headline">Wie ist die Antwort?</h2>
             <div class="question__bookmark">
-            <input class="question__checkbox" type="checkbox" name="Bookmark" id="7">
-            <label for="7"><i class="fas fa-bookmark"></i></label>
+            <input class="question__checkbox" type="checkbox" name="Bookmark" id="1">
+            <label for="1"><i class="fas fa-bookmark"></i></label>
             </div>
         </div>
-        <p class="question__text">Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button class="question__button">Show Answer</button>
+        <p id="answer7" class="question__text hidden">Dies ist die Antwort!</p>
+        <button id="button7" class="question__button">Show Answer</button>
         <div class="question__tags"> 
             <p class="m05">tag1</p>
             <p class="m05">tag2</p>
@@ -132,14 +133,14 @@
     </div>
     <div class="question">
         <div class="question__div1">
-            <h2 class="question_headline">Beispielfrage</h2>
+            <h2 class="question_headline">Wie ist die Antwort?</h2>
             <div class="question__bookmark">
-            <input class="question__checkbox" type="checkbox" name="Bookmark" id="8">
-            <label for="8"><i class="fas fa-bookmark"></i></label>
+            <input class="question__checkbox" type="checkbox" name="Bookmark" id="1">
+            <label for="1"><i class="fas fa-bookmark"></i></label>
             </div>
         </div>
-        <p class="question__text">Wie ist die Beispielfrage der Beispielfragen?</p>
-        <button class="question__button">Show Answer</button>
+        <p id="answer8" class="question__text hidden">Dies ist die Antwort!</p>
+        <button id="button8" class="question__button">Show Answer</button>
         <div class="question__tags"> 
             <p class="m05">tag1</p>
             <p class="m05">tag2</p>
